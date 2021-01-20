@@ -1,0 +1,49 @@
+Exercise 1:
+==========
+
+Address References:
+D2
+DC
+2D
+42
+87
+BA
+AF
+28
+18
+48
+
+TLB Hits: 3
+TLB Misses: 7
+
+Page Hits: 0
+Page Faults: 7
+
+
+Exercise 2:
+===========
+
+0010 0000 = 20
+0100 0000 = 40
+0110 0000 = 60
+1000 0000 = 80
+1010 0000 = A0
+1100 0000 = C0
+1110 0000 = E0
+0010 0000 = 20
+0100 0000 = 40
+0110 0000 = 60
+
+Exercise 3:
+==========
+
+Increase memory size for fewer than 10 page faults.
+
+Exercise 4:
+==========
+
+P1, P2, P3, and P4 are processors or processes.
+
+It looks like there are more TLB misses because there are a lot of context switches and
+the TLB has to invalidate all its entries
+

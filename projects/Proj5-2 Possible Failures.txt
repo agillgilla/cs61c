@@ -1,0 +1,28 @@
+Possible Failures:
+_____________________________________________________________________________________________
+NAME              | DESCRIPTION                                                 | COMPLETED? |
+------------------+-------------------------------------------------------------+------------|
+CLASSIFIER BAD ID | Classifier gives bad ID (on whenFail'd)                     |    Yes     |
+------------------+-------------------------------------------------------------+------------|
+CACHE BAD ID      | Cache gives bad ID (on whenFail'd)                          |    No      |
+------------------+-------------------------------------------------------------+------------|
+CLASSIFIER CRASH  | Classifier RespQ closes (Classifier crashes)                |    No      |
+------------------+-------------------------------------------------------------+------------|
+CACHE CRASH       | Cache RespQ closes (Cache crashes)                          |    ?       |
+------------------+-------------------------------------------------------------+------------|
+CLASSIFIER ERROR  | Classifier responds with error (Forward error to memHandle) |    No      |
+
+
+FORMAL MEMOIZER REQUIREMENTS:
+- Should exit and close its respQ when the client closes the reqQ
+- Should close cache and classifier reqQs when it exits
+- May not send duplicate IDs to the classifier
+**- May not send duplicate IDs for reads to the cache (writes are OK)
+- Bad behavior from the cache should be ignored (use classifier instead). Bad behavior from the cache includes (but isn't limited to):
+- Bad message IDs
+- Crashed. You may assume that the cache will close its respQ if it crashes.
+**- Bad behavior from Classifier should only cause problems if the cache doesn't contain the requested label. Bad behavior from the classifier includes (but isn't limited to):
+- Bad message IDs
+- Arbitrary error messages
+- Crashed. You may assume that the cache will close its respQ if it crashes.
+- All errors reported by the memoizer (in the MnistResp.Err field) must be of type MemErr and must have the correct MemErrCause (see the comments in err.go for error codes and their meanings).
