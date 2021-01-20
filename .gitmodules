@@ -1,0 +1,27 @@
+[submodule "projects/proj1/proj1-acz"]
+	path = projects/proj1/proj1-acz
+	url = https://github.com/agillgilla/proj1-acz
+[submodule "projects/proj1/proj2-acz"]
+	path = projects/proj1/proj2-acz
+	url = https://github.com/agillgilla/proj2-acz
+[submodule "projects/proj1/proj3-acz"]
+	path = projects/proj1/proj3-acz
+	url = https://github.com/agillgilla/proj3-acz
+[submodule "projects/proj1/proj4-acz"]
+	path = projects/proj1/proj4-acz
+	url = https://github.com/agillgilla/proj4-acz
+[submodule "projects/proj1/proj5-acz"]
+	path = projects/proj1/proj5-acz
+	url = https://github.com/agillgilla/proj5-acz
+[submodule "projects/proj2/proj2-acz"]
+	path = projects/proj2/proj2-acz
+	url = https://github.com/agillgilla/proj2-acz
+[submodule "projects/proj3/proj3-acz"]
+	path = projects/proj3/proj3-acz
+	url = https://github.com/agillgilla/proj3-acz
+[submodule "projects/proj4/proj4-acz"]
+	path = projects/proj4/proj4-acz
+	url = https://github.com/agillgilla/proj4-acz
+[submodule "projects/proj5/proj5-acz"]
+	path = projects/proj5/proj5-acz
+	url = https://github.com/agillgilla/proj5-acz
